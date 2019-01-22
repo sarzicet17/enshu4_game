@@ -1,0 +1,14 @@
+body {
+    background-color: rgb(224, 224, 224);
+    color:rgb(5, 39, 33);
+}
+
+h1{
+    text-align: center;
+}
+
+#selection{
+    display: inline;
+    float: left;
+}
+

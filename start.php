@@ -12,13 +12,15 @@
     <h1>難易度選択</h1>
     <hr>
 
-<form name="level" method="POST">
-<input name="submit" type="submit" value="初級">
+<form action="game.php" method="post">
 
+<ul id="selection">
+    <li><input type="button" name="easy_level" value="初級"></li>
+    <li><input type="button" name="easy_level" value="初級"></li>
+    <li><input type="button" name="easy_level" value="初級"></li>
+</ul>
+<input type="submit">
 </form>
 
-<?php 
-
-?>
 </body>
 </html>

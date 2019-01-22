@@ -1,4 +1,10 @@
-var time = new Date();
-var hour = time.getHours;
-vat minute = time.getMinutes;
-var 
+(function(){
+    'use strict';
+
+    var time = document.getElementById('time');
+
+    var startTime;
+    var elapsedTime = 0;
+    var timerId;
+    var timeToadd = 0;
+})

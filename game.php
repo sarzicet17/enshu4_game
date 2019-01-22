@@ -16,18 +16,18 @@
         print("DB Conntection Error");
         exit;
     }
-    if($connect = true){
-        print("DB Success");
-    }
 
-?>
+    $recv_prob = "select num_question from {$_POST['name']} where point=44";
 
-<?php 
     for($i=1;$i<10;$i++){
         for($j=1;$j<10;$j++){
-        $question_array[$i][$j] = pg_query("select num_question from $_GET{['level']} where point=\"$i$j\"");            
-        }
+
+        $question_array[$i][$j] = pg_fetch_result($recv_prob,[$i][$j],'num_question');            
+        print $question_array[$i][$j];
     }
+    }
+
+
 ?>
 
 <form name="panel" mathod="POST">
