@@ -17,12 +17,12 @@
         exit;
     }
 
-    $recv_prob = "select num_question from {$_POST['name']} where point=44";
+    $recv_prob = "select num_question from {$_POST['name']}";
 
     for($i=1;$i<10;$i++){
         for($j=1;$j<10;$j++){
 
-        $question_array[$i][$j] = pg_fetch_result($recv_prob,[$i][$j],'num_question');            
+        $question_array[$i][$j] = pg_fetch_result($recv_prob,[$i][$j],'point');            
         print $question_array[$i][$j];
     }
     }

@@ -19,7 +19,6 @@
     <li><input type="button" name="easy_level" value="初級"></li>
     <li><input type="button" name="easy_level" value="初級"></li>
 </ul>
-<input type="submit">
 </form>
 
 </body>
