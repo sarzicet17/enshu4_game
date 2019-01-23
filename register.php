@@ -12,7 +12,7 @@
     <h1>ユーザー登録</h1>
 <p>
 <?php
-    @$connect = pg_connect("host=localhost dbname=endb1810 user=enuser1810 password=enpass1810");
+    @$connect = pg_connect("host=kite.cs.miyazaki-u.ac.jp dbname=endb1810 user=enuser1810 password=enpass1810");
     if($connect = false){
         print("DB Conntection Error");
         exit;

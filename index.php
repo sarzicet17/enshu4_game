@@ -13,8 +13,8 @@
     <h1>数独ゲーム(Numbar Place)</h1>
     <hr>
     <ul id="selection">
-    <li><a href="register.php">登録</a></li>
-    <li><a href="start.html">ログイン・開始</a></li>
+    <li><a href="register.html">登録</a></li>
+    <li><a href="start.php">ログイン・開始</a></li>
     <li><a href="score.php">全員の得点</a></li>
     </ol>
 </body>

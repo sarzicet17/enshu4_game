@@ -14,11 +14,13 @@
 
 <form action="game.php" method="post">
 
-<ul id="selection">
-    <li><input type="button" name="easy_level" value="初級"></li>
-    <li><input type="button" name="easy_level" value="初級"></li>
-    <li><input type="button" name="easy_level" value="初級"></li>
-</ul>
+
+<select name="easy_level">
+<option value="初級">初級</option>
+<option value="中級">中級</option>
+<option value="上級">上級</option>
+</select>
+<input type="submit">
 </form>
 
 </body>

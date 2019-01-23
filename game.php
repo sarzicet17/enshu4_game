@@ -11,17 +11,16 @@
 <body>
     
 <?php 
-    @$coneect = pg_connect("host=localhost dbname=endb1810 user=enuser1810 password=enpass1810");
+    @$coneect = pg_connect("host=kite.cs.miyazaki-u.ac.jp dbname=endb1810 user=enuser1810 password=enpass1810");
     if($coneect = false){
         print("DB Conntection Error");
         exit;
     }
 
-    $recv_prob = "select num_question from {$_POST['name']}";
 
     for($i=1;$i<10;$i++){
         for($j=1;$j<10;$j++){
-
+        @$pg_query = "select num_question from {$_POST['name']} where point={$points[$i][$j]}";
         $question_array[$i][$j] = pg_fetch_result($recv_prob,[$i][$j],'point');            
         print $question_array[$i][$j];
     }
@@ -30,14 +29,14 @@
 
 ?>
 
-<form name="panel" mathod="POST">
+<form name="panel" method="POST">
 
 <table id="puzzle_array">
 <?php 
     for($i = 1;$i <= 9;$i++){
         print"<tr>";
         for($j = 1;$j <= 9;$j++){
-            print"<td>"."<input>"."</td>";
+            print"<td class=\"puzzle_cell\">"."<input  class=\"puzzle_cell\">"."</td>";
         }
         print"</tr>";
     }
