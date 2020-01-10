@@ -11,7 +11,7 @@
 <body>
     
 <?php 
-    @$coneect = pg_connect("host=kite.cs.miyazaki-u.ac.jp dbname=endb1810 user=enuser1810 password=enpass1810");
+//    @$coneect = pg_connect(""); 各自で設定
     if($coneect = false){
         print("DB Conntection Error");
         exit;
